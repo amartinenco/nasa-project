@@ -12,6 +12,7 @@
     "watch": "npm run server & npm run client",
     "build-client": "cd client && npm run build",
     "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "npm test --prefix server && npm test --prefix client"
   },
   "repository": {
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/amartinenco/nasa-project#readme",
   "dependencies": {
+    "mongoose": "^6.2.1",
     "morgan": "^1.10.0"
   }
 }

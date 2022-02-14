@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGO_URL = '<URL>';
+const MONGO_URL = '';
 
 mongoose.connection.once('open', () => {
   console.log('MongoDB connection ready');
